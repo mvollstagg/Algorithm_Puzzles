@@ -59,6 +59,29 @@
 //     Console.WriteLine(n + " x " + i + " = " + n * i);
 // }
 
+// Day 6: Let's Review
+int num = 2;
+string s1 = "Hacker";
+string s2 = "Rank";
+char[] carr1 = s1.ToCharArray();
+char[] carr2 = s2.ToCharArray();
+char[] oddArr;
+char[] evenArr;
+for (int i = 0; i < carr1.Count(); i++)
+{
+    if(i % 2 == 0)
+        oddArr[i] = carr1[i];
+    else
+        evenArr[i] = carr1[i];
+        
+}
+// fs1 = fs1 + " ";
+// for (int i = 1; i < carr1.Count(); i += 2)
+// {
+//     fs1 += carr1[i];
+// }
+
+Console.ReadKey();
 
 // ************ 1 Week Preparation Kit ************
 // Day 1 - Plus Minus
@@ -85,13 +108,24 @@
 // miniMaxSum(arr);
 
 // Day 1 - Time Conversion
-static string timeConversion(string s)
-{
-    List<string> stringList = s.Split(':').ToList();
-    int hour = stringList[2].Contains("PM") && Convert.ToInt16(stringList[0]) + 12 != 24 ? (Convert.ToInt16(stringList[0]) == 12 ? 0 : Convert.ToInt16(stringList[0]) + 12) : (Convert.ToInt16(stringList[0]) == 12 ? 0 : Convert.ToInt16(stringList[0]) );
-    int minute = Convert.ToInt16(stringList[1]);
-    int seconds = Convert.ToInt16(stringList[2].Remove(stringList[2].Length - 2));
-    return hour.ToString("D2") + ":" + minute.ToString("D2") + ":" + seconds.ToString("D2");
-}
+// static string timeConversion(string s)
+// {
+//     List<string> stringList = s.Split(':').ToList();
+//     int hour = stringList[2].Contains("PM") && Convert.ToInt16(stringList[0]) + 12 != 24 ? (Convert.ToInt16(stringList[0]) == 12 ? 0 : Convert.ToInt16(stringList[0]) + 12) : (Convert.ToInt16(stringList[0]) == 12 ? 0 : Convert.ToInt16(stringList[0]) );
+//     if(stringList[2].Contains("PM") && Convert.ToInt16(stringList[0]) == 12) // !* This controll will be add up later
+//     {
+//         hour = 12;
+//     }
+//     int minute = Convert.ToInt16(stringList[1]);
+//     int seconds = Convert.ToInt16(stringList[2].Remove(stringList[2].Length - 2));
+//     return hour.ToString("D2") + ":" + minute.ToString("D2") + ":" + seconds.ToString("D2");
+// }
+// Console.WriteLine(timeConversion("12:45:54PM"));
 
-Console.WriteLine(timeConversion("12:45:54PM"));
+// Day 1 - Mock Test - Find Median
+// using System.Linq;
+// static int findMedian(List<int> arr)
+// {
+//     return arr.OrderBy(x => x).Skip((arr.Count() - 1) / 2).First();
+// }
+// Console.WriteLine(findMedian(new List<int> { 0, 1, 2, 3, 4, 5, 6 }));

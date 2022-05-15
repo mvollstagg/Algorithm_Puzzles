@@ -1,0 +1,15 @@
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/bin/Debug/net6.0/Algorithm_Puzzles
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/bin/Debug/net6.0/Algorithm_Puzzles.deps.json
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/bin/Debug/net6.0/Algorithm_Puzzles.runtimeconfig.json
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/bin/Debug/net6.0/Algorithm_Puzzles.dll
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/bin/Debug/net6.0/Algorithm_Puzzles.pdb
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/Algorithm_Puzzles.csproj.AssemblyReference.cache
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/Algorithm_Puzzles.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/Algorithm_Puzzles.AssemblyInfoInputs.cache
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/Algorithm_Puzzles.AssemblyInfo.cs
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/Algorithm_Puzzles.csproj.CoreCompileInputs.cache
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/Algorithm_Puzzles.dll
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/refint/Algorithm_Puzzles.dll
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/Algorithm_Puzzles.pdb
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/Algorithm_Puzzles.genruntimeconfig.cache
+/Users/matthieuvollstagg/Documents/GitHub/Algorithm_Puzzles/obj/Debug/net6.0/ref/Algorithm_Puzzles.dll
