@@ -60,28 +60,74 @@
 // }
 
 // Day 6: Let's Review
-int num = 2;
-string s1 = "Hacker";
-string s2 = "Rank";
-char[] carr1 = s1.ToCharArray();
-char[] carr2 = s2.ToCharArray();
-char[] oddArr;
-char[] evenArr;
-for (int i = 0; i < carr1.Count(); i++)
-{
-    if(i % 2 == 0)
-        oddArr[i] = carr1[i];
-    else
-        evenArr[i] = carr1[i];
-        
-}
-// fs1 = fs1 + " ";
-// for (int i = 1; i < carr1.Count(); i += 2)
+// int num = 2;
+// string s1 = "Hacker";
+// string s2 = "Rank";
+// char[] carr1 = s1.ToCharArray();
+// char[] carr2 = s2.ToCharArray();
+// List<char> s1List = ArrangeList(carr1);
+// List<char> s2List = ArrangeList(carr2);
+// int counter = s1List.Count() / num;
+
+// string test = "";
+// s1 = new string(s1List.ToArray());
+// for (int i = 0; i < s1List.Count(); i += counter)
 // {
-//     fs1 += carr1[i];
+//     test += (s1).Substring(i, counter);
+//     test += " ";
+// }
+// Console.WriteLine(test);
+// test = "";
+
+// counter = s2List.Count() / num;
+// s2 = new string(s2List.ToArray());
+// for (int i = 0; i < s2List.Count(); i += counter)
+// {
+//     test += (s2).Substring(i, counter);
+//     test += " ";
+// }
+// Console.WriteLine(test);
+// Console.ReadKey();
+
+// List<char> ArrangeList(char[] charArray) {
+//     List<char> oddArr = new List<char>();
+//     List<char> evenArr = new List<char>();
+//     for (int i = 0; i < charArray.Count(); i++)
+//     {
+//         if(i % 2 == 0)
+//             oddArr.Add(charArray[i]);
+//         else
+//             evenArr.Add(charArray[i]);        
+//     }
+//     oddArr.AddRange(evenArr);
+//     return oddArr;
 // }
 
-Console.ReadKey();
+// Day 7: Arrays
+// int n = Convert.ToInt32(Console.ReadLine().Trim());
+// List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+// arr.Reverse();
+// arr.ForEach(x => Console.Write(x + " "));
+
+// Day 8: Dictionaries and Maps
+// Dictionary <string, string> phonebook = new Dictionary <string, string> ();
+// int n = Convert.ToInt32(Console.ReadLine().Trim());
+// for (int i = 0; i < n; i++)
+// {
+//     string[] split = Console.ReadLine().Split(' ');
+
+//     phonebook.Add(split[0], split[1]);
+// }
+
+// for (int i = 0; i < n; i++) {
+//     string name = Console.ReadLine();
+//     var record = phonebook.FirstOrDefault(x => x.Key == name);
+//     if(record.Key != null)
+//         Console.WriteLine(record.Key + "=" + record.Value);
+//     else
+//         Console.WriteLine("Not found");
+// }
+// Console.ReadKey();
 
 // ************ 1 Week Preparation Kit ************
 // Day 1 - Plus Minus
