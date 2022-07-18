@@ -60,47 +60,27 @@
 // }
 
 // Day 6: Let's Review
-// int num = 2;
-// string s1 = "Hacker";
-// string s2 = "Rank";
-// char[] carr1 = s1.ToCharArray();
-// char[] carr2 = s2.ToCharArray();
-// List<char> s1List = ArrangeList(carr1);
-// List<char> s2List = ArrangeList(carr2);
-// int counter = s1List.Count() / num;
-
-// string test = "";
-// s1 = new string(s1List.ToArray());
-// for (int i = 0; i < s1List.Count(); i += counter)
+// int caseCount = Convert.ToInt32(Console.ReadLine().Trim());
+// for (int i = 0; i < caseCount; i++)
 // {
-//     test += (s1).Substring(i, counter);
-//     test += " ";
+//     string s = Console.ReadLine();
+//     SplitToChunks(s);
 // }
-// Console.WriteLine(test);
-// test = "";
 
-// counter = s2List.Count() / num;
-// s2 = new string(s2List.ToArray());
-// for (int i = 0; i < s2List.Count(); i += counter)
+// static void SplitToChunks(string s)
 // {
-//     test += (s2).Substring(i, counter);
-//     test += " ";
-// }
-// Console.WriteLine(test);
-// Console.ReadKey();
+//     string oddString = "";
+//     string evenString = "";
 
-// List<char> ArrangeList(char[] charArray) {
-//     List<char> oddArr = new List<char>();
-//     List<char> evenArr = new List<char>();
-//     for (int i = 0; i < charArray.Count(); i++)
+//     for (int i = 0; i < s.Length; i++)
 //     {
-//         if(i % 2 == 0)
-//             oddArr.Add(charArray[i]);
+//         if( i % 2 == 0)
+//           evenString += s[i];
 //         else
-//             evenArr.Add(charArray[i]);        
+//           oddString += s[i];
 //     }
-//     oddArr.AddRange(evenArr);
-//     return oddArr;
+
+//     Console.WriteLine($"{evenString} {oddString}");
 // }
 
 // Day 7: Arrays
@@ -119,15 +99,80 @@
 //     phonebook.Add(split[0], split[1]);
 // }
 
-// for (int i = 0; i < n; i++) {
-//     string name = Console.ReadLine();
-//     var record = phonebook.FirstOrDefault(x => x.Key == name);
-//     if(record.Key != null)
-//         Console.WriteLine(record.Key + "=" + record.Value);
+// string name = "";
+// while(!String.IsNullOrEmpty(name = Console.ReadLine())) {
+//     if(phonebook.ContainsKey(name))
+//         Console.WriteLine(name + "=" + phonebook[name]);
 //     else
 //         Console.WriteLine("Not found");
 // }
 // Console.ReadKey();
+
+// Day 9: Recursion 3
+// static int factorial(int n)
+// {
+//     if(n <= 1)
+//         return 1;
+//     else
+//         return n * factorial(n - 1);
+// }
+
+// int n = Convert.ToInt32(Console.ReadLine().Trim());
+// int result = factorial(n);
+// Console.WriteLine(result);
+
+// Day 10: Binary Numbers
+// int n = Convert.ToInt32(Console.ReadLine().Trim());
+// string s = "";
+// while(n > 0)
+// {
+//     s = n % 2 + s;
+//     n = n /2;
+// }
+// int consecutiveCount = 0;
+// int tempConsecutiveCount = 0;
+// for (int i = 0; i < s.Length; i++)
+// {
+//     if(s[i] == '1')
+//     {
+//         tempConsecutiveCount++;
+//         // More professional option.
+//         // consecutiveCount = Math.Max(consecutiveCount, tempConsecutiveCount);
+//         if(consecutiveCount < tempConsecutiveCount)
+//             consecutiveCount = tempConsecutiveCount;
+//     }
+//     else
+//     {
+//         tempConsecutiveCount = 0;
+//     }
+// }
+// Console.WriteLine(consecutiveCount);
+
+// Day 11: 2D Arrays
+// List<List<int>> arr = new List<List<int>>()
+// {
+//     new List<int> { 0, -4, -6, 0, -7, -6 },
+//     new List<int> { -1, -2, -6, -8, -3, -1 },
+//     new List<int> { -8, -4, -2, -8, -8, -6 },
+//     new List<int> { -3, -1, -2, -5, -7, -4, },
+//     new List<int> { -3, -5, -3, -6, -6, -6 },
+//     new List<int> { -3, -6, 0, -8, -6, -7 }
+// };
+
+// int hourglass = int.MinValue;
+// for (int i = 0; i < 4; i++)
+// {
+//     for (int j = 0; j < 4; j++)
+//     {
+//         var temp =  arr[i][j] + arr[i][j + 1] + arr[i][j + 2] +
+//                     arr[i + 1][j + 1] +
+//                     arr[i + 2][j] + arr[i + 2][j + 1] + arr[i + 2][j+ 2];
+//         // Console.WriteLine($"{arr[i][j]}, {arr[i][j + 1]}, {arr[i][j + 2]} \n {arr[i + 1][j + 1]} \n {arr[i + 2][j]}, {arr[i + 2][j + 1]}, {arr[i + 2][j + 2]} \t = {test} \n");
+//         hourglass = Math.Max(hourglass, temp);
+//     }
+// }
+// Console.WriteLine(hourglass);
+
 
 // ************ 1 Week Preparation Kit ************
 // Day 1 - Plus Minus
@@ -175,3 +220,4 @@
 //     return arr.OrderBy(x => x).Skip((arr.Count() - 1) / 2).First();
 // }
 // Console.WriteLine(findMedian(new List<int> { 0, 1, 2, 3, 4, 5, 6 }));
+

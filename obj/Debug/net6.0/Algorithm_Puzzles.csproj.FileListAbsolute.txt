@@ -17,7 +17,6 @@ C:\Users\PC\Documents\Github\Algorithm_Puzzles\bin\Debug\net6.0\Algorithm_Puzzle
 C:\Users\PC\Documents\Github\Algorithm_Puzzles\bin\Debug\net6.0\Algorithm_Puzzles.deps.json
 C:\Users\PC\Documents\Github\Algorithm_Puzzles\bin\Debug\net6.0\Algorithm_Puzzles.runtimeconfig.json
 C:\Users\PC\Documents\Github\Algorithm_Puzzles\bin\Debug\net6.0\Algorithm_Puzzles.dll
-C:\Users\PC\Documents\Github\Algorithm_Puzzles\bin\Debug\net6.0\ref\Algorithm_Puzzles.dll
 C:\Users\PC\Documents\Github\Algorithm_Puzzles\bin\Debug\net6.0\Algorithm_Puzzles.pdb
 C:\Users\PC\Documents\Github\Algorithm_Puzzles\obj\Debug\net6.0\Algorithm_Puzzles.csproj.AssemblyReference.cache
 C:\Users\PC\Documents\Github\Algorithm_Puzzles\obj\Debug\net6.0\Algorithm_Puzzles.GeneratedMSBuildEditorConfig.editorconfig
@@ -28,3 +27,4 @@ C:\Users\PC\Documents\Github\Algorithm_Puzzles\obj\Debug\net6.0\Algorithm_Puzzle
 C:\Users\PC\Documents\Github\Algorithm_Puzzles\obj\Debug\net6.0\ref\Algorithm_Puzzles.dll
 C:\Users\PC\Documents\Github\Algorithm_Puzzles\obj\Debug\net6.0\Algorithm_Puzzles.pdb
 C:\Users\PC\Documents\Github\Algorithm_Puzzles\obj\Debug\net6.0\Algorithm_Puzzles.genruntimeconfig.cache
+C:\Users\PC\Documents\Github\Algorithm_Puzzles\obj\Debug\net6.0\refint\Algorithm_Puzzles.dll
