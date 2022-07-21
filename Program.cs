@@ -310,7 +310,92 @@
 // }
 
 // Day 15: Linked List
-        
+// static  Node insert(Node head,int data)
+// {
+//     if(head == null)
+//     {
+//         return new Node(data);
+//     }
+//     var currentNode = head;
+//     while(currentNode.next != null)
+//     {
+//         currentNode = currentNode.next;
+//     }
+//     currentNode.next = new Node(data);
+//     return head;
+// }
+// class Node
+// {
+// 	public int data;
+// 	public Node next;
+//     public Node(int d){
+//         data=d;
+//         next=null;
+//     }		
+// }
+
+// Day 16: Exceptions - String to Integer
+// try
+// {
+//     string S = Console.ReadLine();
+//     Console.WriteLine(Convert.ToInt32(S));
+// }
+// catch(System.Exception ex)
+// {
+//     Console.WriteLine("Bad String");
+// }
+
+// Day 17: More Exceptions
+// public class Calculator
+// {
+//     public int power(int n, int p)
+//     {
+//         if(n < 0 || p < 0)
+//             throw new Exception("n and p should be non-negative");
+//         else
+//             return Convert.ToInt32(Math.Pow(n, p));
+//     }
+// }
+
+// Day 18: Queues and Stacks
+// Stack<char> stack = new Stack<char>();
+// Queue<char> queue = new Queue<char>();
+
+// void pushCharacter(char ch)
+// {
+//     stack.Push(ch);
+// }
+
+// void enqueueCharacter(char ch)
+// {
+//     queue.Enqueue(ch);
+// }
+
+// char popCharacter()
+// {
+//     return stack.Pop();
+// }
+
+// char dequeueCharacter()
+// {
+//     return queue.Dequeue();
+// }
+
+// Day 19: Interfaces
+// public class Calculator : AdvancedArithmetic
+// {
+//     public int divisorSum(int n)
+//     {
+//         int temp = 0;
+//         for(int i = 1; i <= n; i++)
+//         {
+//             temp += n % i == 0 ? i : 0;
+//         }
+//         return temp;
+//     }
+// }
+
+// Day 20: Sorting
 
 
 
