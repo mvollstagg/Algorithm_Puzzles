@@ -396,8 +396,39 @@
 // }
 
 // Day 20: Sorting
+// int n = Convert.ToInt32(Console.ReadLine().Trim());
+// List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
+// int swapCount = 0;
+// for(int i = 0; i < n; i++)
+// {            
+//     for(int j = 0; j < n - 1; j++)
+//     {
+//         if(a[j] > a[j + 1])
+//         {
+//             var temp = a[j];
+//             a[j] = a[j + 1];
+//             a[j + 1] = temp;
+//             swapCount++;
+//         }
+//     }
+    
+//     if(swapCount == 0)
+//         break;
+// }
+// Console.WriteLine("Array is sorted in {0} swaps.", swapCount);
+// Console.WriteLine("First Element: " + a.FirstOrDefault());
+// Console.WriteLine("Last Element: " + a.LastOrDefault());
 
+// Day 21: Generics
+// public static void PrintArray<T>(T[] data)
+// {
+//     foreach(var item in data)
+//     {
+//         Console.WriteLine(item);
+//     }
+// }
 
+// Day 22: Binary Search Trees
 
 // ************ 1 Week Preparation Kit ************
 // Day 1 - Plus Minus
