@@ -429,6 +429,132 @@
 // }
 
 // Day 22: Binary Search Trees
+// static int getHeight(Node root){
+//     if(root == null)
+//         return -1;
+//     return 1 + Math.Max(getHeight(root.left), getHeight(root.right));
+// }
+
+// Day 23: BST Level-Order Traversal
+// Node root = null;
+// int T=Int32.Parse(Console.ReadLine());
+// while(T-->0){
+//     int data=Int32.Parse(Console.ReadLine());
+//     root=insert(root,data);            
+// }
+// levelOrder(root);
+
+// static void levelOrder(Node root){
+//     Queue<Node> queue = new Queue<Node>();
+//     queue.Enqueue(root);
+//     while(queue.Count > 0)
+//     {
+//         Node currentNode = queue.Dequeue();
+//         Console.Write(currentNode.data + " "); 
+        
+//         if(currentNode.left != null)
+//             queue.Enqueue(currentNode.left);
+//         if(currentNode.right != null)
+//             queue.Enqueue(currentNode.right);
+//     }
+// }
+
+// static Node insert(Node root, int data){
+//     if(root==null){
+//         return new Node(data);
+//     }
+//     else{
+//         Node cur;
+//         if(data<=root.data){
+//             cur=insert(root.left,data);
+//             root.left=cur;
+//         }
+//         else{
+//             cur=insert(root.right,data);
+//             root.right=cur;
+//         }
+//         return root;
+//     }
+// }
+// class Node
+// {
+//     public int data;
+//     public Node left;
+//     public Node right;
+//     public Node(int d)
+//     {
+//         data = d;
+//         left = null;
+//         right = null;
+//     }
+// }
+
+// Day 24: More Linked Lists
+// Node head=null;
+// int T=Int32.Parse(Console.ReadLine());
+// while(T-- > 0){
+//     int data=Int32.Parse(Console.ReadLine());
+//     head=insert(head,data);
+// }
+// head=removeDuplicates(head);
+// display(head);
+
+// static Node removeDuplicates(Node head){
+    // Node current = head;
+    // while(current != null && current.next != null)
+    // {
+    //     if(current.data == current.next.data)
+    //     {
+    //         current.next = current.next.next;
+    //     }
+    //     else
+    //     {
+    //         current = current.next;
+    //     }
+    // }
+    // return head;
+// }
+// static  Node insert(Node head,int data)
+// {
+//     Node p=new Node(data);
+    
+    
+//     if(head==null)
+//         head=p;
+//     else if(head.next==null)
+//         head.next=p;
+//     else
+//     {
+//         Node start=head;
+//         while(start.next!=null)
+//             start=start.next;
+//         start.next=p;
+        
+//     }
+//     return head;
+// }
+// static void display(Node head)
+// {
+//     Node start=head;
+//     while(start!=null)
+//     {
+//         Console.Write(start.data+" ");
+//         start=start.next;
+//     }
+// }
+// class Node
+// {
+//     public int data;
+//     public Node next;
+//     public Node(int d)
+//     {
+//         data = d;
+//         next = null;
+//     }
+// }
+
+// Day 25: Running Time and Complexity
+
 
 // ************ 1 Week Preparation Kit ************
 // Day 1 - Plus Minus
