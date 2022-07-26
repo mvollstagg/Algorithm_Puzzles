@@ -554,6 +554,55 @@
 // }
 
 // Day 25: Running Time and Complexity
+// int n = int.Parse(Console.ReadLine());
+// for(int i = 0; i < n; i++)
+// {
+//     Console.WriteLine(IsPrime(Convert.ToInt32(Console.ReadLine())) ? "Prime" : "Not prime");
+// }
+
+// static bool IsPrime(int n)
+// {
+//     if (n <= 1) return false;
+//     if (n == 2) return true;
+//     if (n % 2 == 0) return false;
+//     for (int i = 3; i <= Math.Sqrt(n); i += 2)
+//     {
+//         if (n % i == 0)
+//             return false;
+//     }
+//     return true;
+// }
+
+// Day 26: Nested Logic
+// List<int> ReturnDate = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToList();
+// List<int> DueDate = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToList();
+// DateTime ReturnDateTime = new DateTime(ReturnDate[2], ReturnDate[1], ReturnDate[0]);
+// DateTime DueDateTime = new DateTime(DueDate[2], DueDate[1], DueDate[0]);
+// Console.WriteLine(GetExpiryDateFee(ReturnDateTime, DueDateTime));
+// static int GetExpiryDateFee(DateTime ReturnDateTime, DateTime DueDateTime)
+// {
+//     int expiryFee = 0;
+//     if (ReturnDateTime <= DueDateTime)
+//     {
+//         expiryFee = 0;
+//     }
+//     else if(ReturnDateTime.Month == DueDateTime.Month && ReturnDateTime.Year == DueDateTime.Year)
+//     {
+//         expiryFee = 15 * (ReturnDateTime.Day - DueDateTime.Day);
+//     }
+//     else if(ReturnDateTime.Year == DueDateTime.Year)
+//     {
+//         expiryFee = 500 * (ReturnDateTime.Month - DueDateTime.Month);
+//     }
+//     else
+//     {
+//         expiryFee = 10000;
+//     }
+//     return expiryFee;
+// }
+
+// Day 27: Testing
+
 
 
 // ************ 1 Week Preparation Kit ************
