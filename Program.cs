@@ -601,9 +601,74 @@
 //     return expiryFee;
 // }
 
-// Day 27: Testing
+// Day 27: Testing (C++)
+// class TestDataEmptyArray
+// {
+//     public:
+//         static vector<int> get_array()
+//         {
+//             vector<int> v;
+//             return v;
+//         }
+// };
 
+// class TestDataUniqueValues
+// {
+//     public:
+//         static vector<int> get_array()
+//         {
+//             vector<int> v = { 1, 2, 3 };
+//             return v;
+//         }
+        
+//         static int get_expected_result()
+//         {
+//             return 0;
+//         }
+// };
 
+// class TestDataExactlyTwoDifferentMinimums
+// {
+//     public:
+//         static vector<int> get_array()
+//         {
+//             vector<int> v = { 1, 1, 2, 3 };
+//             return v;
+//         }
+        
+//         static int get_expected_result()
+//         {
+//             return 0;
+//         }
+// };
+
+// Day 28: RegEx, Patterns, and Intro to Databases
+// using System.Text.RegularExpressions;
+// int N = Convert.ToInt32(Console.ReadLine().Trim());
+// List<string> UserList = new List<string>();
+// for (int NItr = 0; NItr < N; NItr++)
+// {
+//     string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+
+//     string firstName = firstMultipleInput[0];    
+//     string emailID = firstMultipleInput[1];
+//     if(IsValidUserName(firstName) && IsValidEmail(emailID))
+//     {
+//         UserList.Add(firstName);
+//     }
+// }
+// UserList.OrderBy(x => x).ToList().ForEach(x => Console.WriteLine(x));
+// static bool IsValidUserName(string s)
+// {
+//     Regex regex = new Regex(@"^(?!^.{21})[a-z]\D*$");
+//     return regex.IsMatch(s);
+// }
+
+// static bool IsValidEmail(string s)
+// {
+//     Regex regex = new Regex(@"^(?!^.{51})[a-z.]+@[gmail]+\.[com]+\D*$");
+//     return regex.IsMatch(s);
+// }
 
 // ************ 1 Week Preparation Kit ************
 // Day 1 - Plus Minus
