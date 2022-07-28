@@ -701,7 +701,182 @@
 
 // ************ 30 Days Challenge End ************
 
+// ************ C# Basic Test ************
+// Question 1:
+// var notesStoreObj = new NotesStore();
+// var n = int.Parse(Console.ReadLine());
+// for (var i = 0; i < n; i++) {
+//     var operationInfo = Console.ReadLine().Split(' ');
+//     try
+//     {
+//         if (operationInfo[0] == "AddNote")
+//             notesStoreObj.AddNote(operationInfo[1], operationInfo.Length == 2 ? "" : operationInfo[2]);
+//         else if (operationInfo[0] == "GetNotes")
+//         {
+//             var result = notesStoreObj.GetNotes(operationInfo[1]);
+//             if (result.Count == 0)
+//                 Console.WriteLine("No Notes");
+//             else
+//                 Console.WriteLine(string.Join(",", result));
+//         } else {
+//             Console.WriteLine("Invalid Parameter");
+//         }
+//     }
+//     catch (Exception e)
+//     {
+//         Console.WriteLine("Error: " + e.Message);
+//     }
+// }
 
+// public class NotesStore
+// {
+//     public List<string> ActiveNotes = new List<string>();
+//     public List<string> CompletedNotes = new List<string>();
+//     public List<string> OtherNotes  = new List<string>();
+//     public NotesStore() {}
+//     public void AddNote(String state, String name) 
+//     {
+//         if(string.IsNullOrEmpty(name))
+//             throw new Exception("Name cannot be empty");
+//         if(!(state == "active" || state == "completed" || state == "others"))
+//             throw new Exception("Invalid state " + state);
+//         switch(state)
+//         {
+//             case "active":
+//                 ActiveNotes.Add(name);
+//                 break;
+//             case "completed":
+//                 CompletedNotes.Add(name);
+//                 break;
+//             case "others":
+//                 OtherNotes.Add(name);
+//                 break;
+//         }
+//     }
+//     public List<String> GetNotes(String state) 
+//     {
+//         if(!(state == "active" || state == "completed" || state == "others"))
+//             throw new Exception("Invalid state " + state);
+//         switch(state)
+//         {
+//             case "active":
+//                 return ActiveNotes;
+//             case "completed":
+//                 return CompletedNotes;
+//             case "others":
+//                 return OtherNotes;
+//             default:
+//                 return new List<string>();
+//         }
+//     }
+// }
+
+// Question 2:
+// int countOfEmployees = int.Parse(Console.ReadLine());
+
+// var employees = new List<Employee>();
+
+// for (int i = 0; i < countOfEmployees; i++)
+// {
+//     string str = Console.ReadLine();
+//     string[] strArr = str.Split(' ');
+//     employees.Add(new Employee { 
+//         FirstName = strArr[0], 
+//         LastName = strArr[1], 
+//         Company = strArr[2], 
+//         Age = int.Parse(strArr[3]) 
+//         });
+// }
+
+// foreach (var emp in AverageAgeForEachCompany(employees))
+// {
+//     Console.WriteLine($"The average age for company {emp.Key} is {emp.Value}");
+// }
+
+// foreach (var emp in CountOfEmployeesForEachCompany(employees))
+// {
+//     Console.WriteLine($"The count of employees for company {emp.Key} is {emp.Value}");
+// }
+
+// foreach (var emp in OldestAgeForEachCompany(employees))
+// {
+//     Console.WriteLine($"The oldest employee of company {emp.Key} is {emp.Value.FirstName} {emp.Value.LastName} having age {emp.Value.Age}");
+// }
+
+// static Dictionary<string, int> AverageAgeForEachCompany(List<Employee> employees)
+// {
+//     var result = new Dictionary<string, int>();
+//     var companyList = new Dictionary<string, int>();
+//     employees.Sort((x, y) => x.Company.CompareTo(y.Company));
+//     foreach(var employee in employees)
+//     {
+//         if(result.ContainsKey(employee.Company))
+//         {
+//             result[employee.Company] += employee.Age;
+//             companyList[employee.Company] += 1;
+//         }
+            
+//         else
+//         {
+//             result.Add(employee.Company, employee.Age);
+//             companyList.Add(employee.Company, 1);
+//         }
+//     }
+//     foreach (var item in result)
+//     {
+//         result[item.Key] = (int)Math.Round((decimal)item.Value / companyList[item.Key]);
+//     }
+
+//     return result;
+// }
+
+// static Dictionary<string, int> CountOfEmployeesForEachCompany(List<Employee> employees)
+// {
+//     employees.Sort((x, y) => x.Company.CompareTo(y.Company));
+//     var result = new Dictionary<string, int>();
+//     foreach(var employee in employees)
+//     {
+//         if(result.ContainsKey(employee.Company))
+//         {
+//             result[employee.Company] += 1;
+//         }            
+//         else
+//         {
+//             result.Add(employee.Company, 1);
+//         }
+//     }
+//     return result;
+// }
+
+// static Dictionary<string, Employee> OldestAgeForEachCompany(List<Employee> employees)
+// {
+//     var result = new Dictionary<string, Employee>();
+//     employees.Sort((x, y) => x.Company.CompareTo(y.Company));
+//     foreach(var employee in employees)
+//     {
+//         if(result.ContainsKey(employee.Company))
+//         {
+//             if(employee.Age > result[employee.Company].Age)
+//             {
+//                 result[employee.Company] = employee;
+//             }
+//         }
+//         else
+//         {
+//             result.Add(employee.Company, employee);
+//         }
+//     }
+//     return result;  
+
+// }
+
+// public class Employee
+// {
+//     public string FirstName { get; set; }
+//     public string LastName { get; set; }
+//     public int Age { get; set; }
+//     public string Company { get; set; }
+// }
 
 
 // ************ 1 Week Preparation Kit ************
