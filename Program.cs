@@ -670,6 +670,40 @@
 //     return regex.IsMatch(s);
 // }
 
+// Day 29: Bitwise AND
+// int t = Convert.ToInt32(Console.ReadLine().Trim());
+// for (int tItr = 0; tItr < t; tItr++)
+// {
+//     string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+//     int count = Convert.ToInt32(firstMultipleInput[0]);
+//     int lim = Convert.ToInt32(firstMultipleInput[1]);
+//     int res = Result.bitwiseAnd(count, lim);
+//     Console.WriteLine(res);
+// }
+
+// class Result
+// {
+//     public static int bitwiseAnd(int N, int K)
+//     {
+//         var max = int.MinValue;
+//         for (int i = 1; i < N; i++)
+//         {
+//             for (int j = i + 1; j <= N; j++)
+//             {
+//                 var curr = i & j;
+//                 if(curr < K)
+//                     max = Math.Max(max, curr);
+//             }
+//         }
+//         return max;
+//     }
+// }
+
+// ************ 30 Days Challenge End ************
+
+
+
+
 // ************ 1 Week Preparation Kit ************
 // Day 1 - Plus Minus
 // using System.Linq;
