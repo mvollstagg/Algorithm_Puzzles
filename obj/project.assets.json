@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Documents\\Github\\Algorithm_Puzzles\\Algorithm_Puzzles.csproj",
+      "projectUniqueName": "c:\\Users\\PC\\Documents\\Github\\Algorithm_Puzzles\\Algorithm_Puzzles.csproj",
       "projectName": "Algorithm_Puzzles",
-      "projectPath": "C:\\Users\\PC\\Documents\\Github\\Algorithm_Puzzles\\Algorithm_Puzzles.csproj",
+      "projectPath": "c:\\Users\\PC\\Documents\\Github\\Algorithm_Puzzles\\Algorithm_Puzzles.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Documents\\Github\\Algorithm_Puzzles\\obj\\",
+      "outputPath": "c:\\Users\\PC\\Documents\\Github\\Algorithm_Puzzles\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
